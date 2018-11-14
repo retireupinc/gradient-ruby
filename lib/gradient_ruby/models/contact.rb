@@ -14,8 +14,8 @@ module GradientRuby
       attribute :Greeting, String
       attribute :DriversLicenseNumber, String
       attribute :DriversLicenseState, String
-      attribute :DriversLicenseExpirationDate, DateTime,
-      attribute :IsCitizen, Boolean,
+      attribute :DriversLicenseExpirationDate, DateTime
+      attribute :IsCitizen, Boolean
       attribute :Age, Integer
       attribute :MaritalStatus, String
       attribute :EmailAddresses, Array
