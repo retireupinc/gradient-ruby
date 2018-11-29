@@ -13,7 +13,7 @@ module GradientRuby
       end
 
       def initialize(attrs = {}, client = nil)
-        super attrs
+        super attrs.deep_transform_keys { |key| key.underscore }
         @client = client
       end
 
@@ -29,7 +29,7 @@ module GradientRuby
             val = val.strftime('%F')
           end
 
-          params[jsa] = val
+          params[jsa.camelize] = val
           params
         end
       end

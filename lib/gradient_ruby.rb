@@ -28,8 +28,8 @@ module GradientRuby
     attr_accessor :client_id, :client_secret, :api_endpoint, :token_url
 
     def initialize
-      @api_endpoint = 'https://api.konnexme.com/v1/'
-      @token_url = "https://app.konnexme.com/oauth/token"
+      @api_endpoint = 'https://retireupapialpha.konnexme.com/'
+      @token_url = "https://loginalpha.konnexme.com/identity/connect/token"
     end
   end
 end

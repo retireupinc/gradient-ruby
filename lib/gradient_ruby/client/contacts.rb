@@ -2,17 +2,17 @@ module GradientRuby
   class Client
     module Contacts
       def search_contacts(search_query, options = {})
-        contacts = get 'contacts', {query: { name: search_query}}
+        contacts = get 'clients', {query: { searchString: search_query}}
         contacts['contacts'].map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
       end
 
       def contacts
-        contacts = get 'contacts'
+        contacts = get 'clients'
         contacts['contacts'].map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
       end
 
       def contact(contact_id)
-        contact = get "contacts/#{contact_id}"
+        contact = get "clients/#{contact_id}"
         GradientRuby::Models::Contact.new contact, self
       end
 
