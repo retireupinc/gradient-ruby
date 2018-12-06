@@ -3,7 +3,6 @@ module GradientRuby
     module Contacts
       def search_contacts(search_query, options = {})
         contacts = get 'clients', {query: { searchString: search_query}}
-        Rails.logger.error("#{contacts.inspect}")
         contacts['contacts'].map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
       end
 
