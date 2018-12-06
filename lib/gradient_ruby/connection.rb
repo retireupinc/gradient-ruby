@@ -46,6 +46,7 @@ module GradientRuby
     end
 
     def handle_response(response)
+      Rails.logger.error("response: #{response.inspect}")
       if response.code != 200
         case response.code
           when 401
