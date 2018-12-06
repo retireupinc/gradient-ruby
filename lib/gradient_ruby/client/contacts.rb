@@ -3,12 +3,12 @@ module GradientRuby
     module Contacts
       def search_contacts(search_query, options = {})
         contacts = get 'clients', {query: { searchString: search_query}}
-        contacts['contacts'].map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
+        contacts.map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
       end
 
       def contacts
         contacts = get 'clients'
-        contacts['contacts'].map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
+        contacts.map { |contact_params| GradientRuby::Models::Contact.new contact_params, self }
       end
 
       def contact(contact_id)
