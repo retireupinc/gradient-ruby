@@ -25,8 +25,6 @@ module GradientRuby
     private
 
     def request(method, path, options = {})
-      Rails.logger.error("#{method} #{path} #{options.inspect}")
-
       options[:headers] = headers.merge(options[:headers] || {})
       handle_response(HTTParty.send(method, URI::Parser.new.escape("#{endpoint}/#{path.to_s}"), options))
     end
@@ -48,8 +46,6 @@ module GradientRuby
     end
 
     def handle_response(response)
-      Rails.logger.error("#{response.inspect}")
-
       if response.code != 200
         case response.code
           when 401

@@ -2,6 +2,7 @@ module GradientRuby
   module Models
     class Contact < APIModel
       attribute :id, Integer
+      attribute :name, String
       attribute :title, String
       attribute :first_name, String
       attribute :middle_name, String
@@ -25,8 +26,8 @@ module GradientRuby
       attribute :social_security, Hash
       attribute :financial_priorities, Hash
 
-      json_attributes :first_name, :middle_name, :last_name, :title, :suffix, :date_of_birth, :gender,
-                      :email_addresses, :marital_status
+      json_attributes :name, :title, :first_name, :middle_name, :last_name, :suffix,
+                      :email_addresses, :date_of_birth, :gender, :marital_status
 
       def save
         if @id
