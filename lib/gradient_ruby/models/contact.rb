@@ -1,7 +1,7 @@
 module GradientRuby
   module Models
     class Contact < APIModel
-      attribute :id, Integer
+      attribute :id, String
       attribute :name, String
       attribute :title, String
       attribute :first_name, String
