@@ -17,7 +17,7 @@ module GradientRuby
       attribute :marital_status, String
       attribute :phone_number, String
       attribute :physical_address, String
-      attrinute :spouse, Spouse
+      attribute :client_spouse, Spouse
 
       json_attributes :name, :prefix, :first_name, :middle_name, :last_name, :suffix,
                       :date_of_birth, :gender, :marital_status
