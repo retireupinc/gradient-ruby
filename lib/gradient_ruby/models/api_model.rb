@@ -29,7 +29,7 @@ module GradientRuby
             val = val.strftime('%F')
           end
 
-          params[jsa.camelize] = val
+          params[jsa.to_s.camelize] = val
           params
         end
       end
