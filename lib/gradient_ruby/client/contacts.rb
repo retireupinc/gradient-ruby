@@ -22,7 +22,7 @@ module GradientRuby
       end
 
       def update_contact(contact_id, params)
-        contact = GradientRuby::Models::Contact.new params.merge(id: contact_id), self
+        contact = GradientRuby::Models::Contact.new params.merge('id' => contact_id), self
         contact.save
       end
 
