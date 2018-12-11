@@ -13,7 +13,7 @@ module GradientRuby
 
       def contact(contact_id)
         contact = get "clients/#{contact_id}"
-        GradientRuby::Models::Contact.new format_contact!(contact), self
+        GradientRuby::Models::Contact.new contact, self
       end
 
       def create_contact(params)
@@ -22,15 +22,15 @@ module GradientRuby
       end
 
       def update_contact(contact_id, params)
-        contact = GradientRuby::Models::Contact.new params.merge('id' => contact_id), self
+        contact = GradientRuby::Models::Contact.new merge_contact_id(contact_id, params), self
         contact.save
       end
 
       private
 
-      def format_contact!(contact)
-        client = contact.delete('Client')
-        contact.merge!(client)
+      def merge_contact_id(contact_id, params)
+        client = params[:client].merge('id' => contact_id)
+        params.merge(client: client)
       end
     end
   end

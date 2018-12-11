@@ -47,7 +47,7 @@ Returns `Array[GradientRuby::Models::Contact]`
 ##### Find contact by id
 
 ```ruby
-  contact = client.contact(1234)
+  contact = client.contact('1234')
 ```
 
 Returns `GradientRuby::Models::Contact`
@@ -63,7 +63,7 @@ Returns `GradientRuby::Models::Contact`
 ##### Update contact
 
 ```ruby
-  contact = client.update_contact(contact_params)
+  contact = client.update_contact(contact_id, contact_params)
 ```
 
 Returns `GradientRuby::Models::Contact`

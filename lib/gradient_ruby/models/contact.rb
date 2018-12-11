@@ -3,24 +3,11 @@ module GradientRuby
     class Contact < APIModel
       attribute :id, String
       attribute :name, String
-      attribute :prefix, String
-      attribute :first_name, String
-      attribute :middle_name, String
-      attribute :last_name, String
-      attribute :suffix, String
-      attribute :gender, String
-      attribute :date_of_birth, DateTime
-      attribute :drivers_license_number, String
-      attribute :drivers_license_state, String
-      attribute :drivers_license_expiration_date, DateTime
-      attribute :is_citizen, Boolean
-      attribute :marital_status, String
-      attribute :phone_number, String
-      attribute :physical_address, String
+      attribute :client, Client
       attribute :client_spouse, Spouse
+      attribute :physical_address, String
 
-      json_attributes :name, :prefix, :first_name, :middle_name, :last_name, :suffix,
-                      :date_of_birth, :gender, :marital_status
+      json_attributes :client, :client_spouse
 
       def save
         if @id
