@@ -37,9 +37,9 @@ module GradientRuby
         when Date
           val.strftime('%F')
         when Hash
-          val.map { |k, v| [ transform_key k, transform_val v ] }.to_h.compact.presence
+          val.map { |k, v| [ transform_key(k), transform_val(v) ] }.to_h.compact.presence
         when Array
-          val.map { |v| [ transform_val v ] }.presence
+          val.map { |v| [ transform_val(v) ] }.presence
         else
           val
         end
