@@ -31,6 +31,8 @@ module GradientRuby
       private
 
       def transform_val(val)
+        return nil if val.nil?
+
         if val.respond_to?(:to_h) && !val.is_a?(Array)
           val = val.to_h
         elsif val.respond_to?(:to_a) && !val.is_a?(Hash)
@@ -38,14 +40,12 @@ module GradientRuby
         end
 
         case val
-        when nil
-          nil
-        when Date
-          val.strftime('%F')
+        when Date, DateTime
+          val.strftime('%Y-%m-%dT%H:%M:%SZ')
         when Hash
           val.map { |k, v| [ transform_key(k), transform_val(v) ] }.to_h.compact.presence
         when Array
-          val.map { |v| [ transform_val(v) ] }.presence
+          val.map { |v| [ transform_val(v) ] }.compact.presence
         else
           val
         end
