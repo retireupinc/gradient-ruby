@@ -3,9 +3,8 @@ module GradientRuby
     class Contact < APIModel
       attribute :id, String
       attribute :name, String
-      attribute :client, Client
-      attribute :client_spouse, Spouse
-      attribute :physical_address, String
+      attribute :client, GradientRuby::Models::Client
+      attribute :client_spouse, GradientRuby::Models::Spouse
 
       json_attributes :client, :client_spouse
 

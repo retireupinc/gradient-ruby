@@ -29,7 +29,7 @@ module GradientRuby
       private
 
       def merge_contact_id(contact_id, params)
-        client = params[:client].merge('id' => contact_id)
+        client = params[:client].merge(id: contact_id)
         params.merge(client: client)
       end
     end
