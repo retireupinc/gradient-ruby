@@ -18,7 +18,7 @@ module GradientRuby
 
       def json_params
         self.class.json_attrs.inject({}) do |hash, key|
-          val = transform_val self.send(key)
+          val = transform_val(self.send(key))
 
           next hash if val.nil?
 
@@ -31,6 +31,12 @@ module GradientRuby
       private
 
       def transform_val(val)
+        if val.respond_to?(:to_h) && !val.is_a?(Array)
+          val = val.to_h
+        elsif val.respond_to?(:to_a) && !val.is_a?(Hash)
+          val = val.to_a
+        end
+
         case val
         when nil
           nil

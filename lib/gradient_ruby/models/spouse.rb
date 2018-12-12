@@ -2,7 +2,6 @@ module GradientRuby
   module Models
     class Spouse < Base
       attribute :id, String
-      attribute :name, String
       attribute :prefix, String
       attribute :first_name, String
       attribute :middle_name, String
@@ -16,6 +15,7 @@ module GradientRuby
       attribute :is_citizen, Boolean
       attribute :marital_status, String
       attribute :phone_number, String
+      attribute :physical_address, Address
     end
   end
 end
