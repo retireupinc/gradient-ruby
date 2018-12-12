@@ -13,7 +13,7 @@ module GradientRuby
 
       def initialize(attrs = {}, client = nil)
         super attrs.deep_transform_keys { |key| key.to_s.underscore }
-        @client = client
+        @agent = client
       end
 
       def json_params
