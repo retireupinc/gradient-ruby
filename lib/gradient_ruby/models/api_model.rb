@@ -18,11 +18,11 @@ module GradientRuby
 
       def json_params
         self.class.json_attrs.inject({}) do |hash, key|
-          val = transform_val self.send(k)
+          val = transform_val self.send(key)
 
           next hash if val.nil?
 
-          hash[transform_key key] = val
+          hash[transform_key(key)] = val
 
           hash
         end
