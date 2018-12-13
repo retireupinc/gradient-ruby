@@ -5,7 +5,7 @@ module GradientRuby
       attribute :name, String
       attribute :client, Client
       attribute :client_spouse, Spouse
-      attribute :children, Array[Children]
+      attribute :children, Set[Children]
 
       json_attributes :client, :client_spouse
 
