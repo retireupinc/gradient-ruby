@@ -1,6 +1,6 @@
 module GradientRuby
   module Models
-    class InsuranceAccount < Base
+    class Account < Base
       attribute :product_type_id, String
       attribute :name, String
       attribute :account_number, String
