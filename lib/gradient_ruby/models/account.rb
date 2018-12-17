@@ -11,7 +11,7 @@ module GradientRuby
       attribute :is_managed_money, Boolean
       attribute :account_vendor_products, Set[Product]
       attribute :owners, Set[String]
-      attribute :values, Set[Value],
+      attribute :values, Set[Value]
       attribute :premiums, Set[Contribution]
       attribute :investments, Set[Contribution]
       attribute :withdrawals, Set[Withdrawal]
