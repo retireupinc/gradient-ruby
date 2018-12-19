@@ -12,8 +12,12 @@ module GradientRuby
       attribute :liabilities, Set[Liability]
       attribute :investment_accounts, Set[Account]
       attribute :insurance_accounts, Set[Account]
+      attribute :consumer_id, String
+      attribute :display_name, String
+      attribute :base64_encoded_file, String
 
-      json_attributes :client, :client_spouse
+      json_attributes :client, :client_spouse, :children,
+                      :consumer_id, :display_name, :base64_encoded_file
 
       def save
         if @id
@@ -21,6 +25,12 @@ module GradientRuby
         else
           response = @agent.post "clients", {body: json_params}
         end
+
+        self.class.new response, self
+      end
+
+      def upload
+        response = @agent.post "documents", {body: json_params}
 
         self.class.new response, self
       end

@@ -26,7 +26,16 @@ module GradientRuby
         contact.save
       end
 
+      def upload_document(contact_id, params)
+        contact = GradientRuby::Models::Contact.new merge_consumer_id(contact_id, params), self
+        contact.upload
+      end
+
       private
+
+      def merge_consumer_id(contact_id, params)
+        params.merge(consumer_id: contact_id)
+      end
 
       def merge_contact_id(contact_id, params)
         client = params[:client].merge(id: contact_id)
