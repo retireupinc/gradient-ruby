@@ -6,7 +6,7 @@ module GradientRuby
       attribute :description, String
       attribute :account_number, String
       attribute :owners, Set[String]
-      attribute :asset_value_models, Set[Value]
+      attribute :latest_value, Value
     end
   end
 end

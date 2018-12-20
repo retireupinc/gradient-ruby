@@ -1,8 +1,8 @@
 module GradientRuby
   module Models
     class Value < Base
-      attribute :value_date, DateTime
       attribute :value, Float
+      attribute :value_date, DateTime
     end
   end
 end

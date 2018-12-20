@@ -4,7 +4,7 @@ module GradientRuby
       attribute :id, String
       attribute :name, String
       attribute :client, Client
-      attribute :client_spouse, Spouse
+      attribute :client_spouse, Client
       attribute :children, Set[Child]
       attribute :incomes, Set[Income]
       attribute :assets, Set[Asset]

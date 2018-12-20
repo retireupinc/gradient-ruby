@@ -7,7 +7,7 @@ module GradientRuby
       attribute :maturity_date, DateTime
       attribute :account_number, String
       attribute :owners, Set[String]
-      attribute :amounts, Set[Amount]
+      attribute :latest_amount, Value
     end
   end
 end

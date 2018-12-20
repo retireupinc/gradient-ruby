@@ -17,7 +17,10 @@
       "StateOrProvince": "Kansas",
       "ZipCode": 97315
     },
-    "PhoneNumber": "6514888888",
+    "PhoneNumber": {
+      "PhoneNumber": "6514888888",
+      "PhoneNumberType": "Other"
+    },
     "Gender": "Male",
     "Suffix": "III",
     "Prefix": "Dr."
@@ -34,7 +37,7 @@
     "IsCitizen": true,
     "MaritalStatus": "Married",
     "PhysicalAddress": null,
-    "PhoneNumber": "",
+    "PhoneNumber": null,
     "Gender": "Female",
     "Suffix": "Jr.",
     "Prefix": "Mrs."
@@ -78,73 +81,73 @@
     "Description": "House",
     "AccountNumber": "55555",
     "Owners": ["4611686018429193739"],
-    "AssetValueModels": [{
-      "ValueDate": "2018-11-01T00:00:00Z",
-      "Value": 520000.0
-    }]
+    "LatestValue": {
+      "Value": 520000.0,
+      "ValueDate": "2018-11-01T00:00:00Z"
+    }
   }, {
     "Id": "16061",
     "AssetType": "Saving",
     "Description": "Savings",
     "AccountNumber": "333",
     "Owners": ["4611686018429193739"],
-    "AssetValueModels": [{
-      "ValueDate": "2018-10-19T00:00:00Z",
-      "Value": 25000.0
-    }]
+    "LatestValue": {
+      "Value": 25000.0,
+      "ValueDate": "2018-10-19T00:00:00Z"
+    }
   }],
   "Expenses": [{
     "Id": "15895",
-    "ExpenseTypeId": "Rent/Mortgage",
+    "ExpenseType": "Rent/Mortgage",
     "Description": "Rent/Mortgage",
     "MonthlyExpense": 2500.0,
     "Owners": ["4611686018429193739"]
   }, {
     "Id": "15896",
-    "ExpenseTypeId": "Car Loan Payment 1",
+    "ExpenseType": "Car Loan Payment 1",
     "Description": "Car Loan Payment 1",
     "MonthlyExpense": 500.0,
     "Owners": ["4611686018429193739"]
   }, {
     "Id": "15897",
-    "ExpenseTypeId": "Electric",
+    "ExpenseType": "Electric",
     "Description": "Electric",
     "MonthlyExpense": 75.0,
     "Owners": ["4611686018429193739"]
   }, {
     "Id": "15898",
-    "ExpenseTypeId": "Pet Needs",
+    "ExpenseType": "Pet Needs",
     "Description": "Pet Needs",
     "MonthlyExpense": 100.0,
     "Owners": ["4611686018429193739"]
   }],
   "Liabilities": [{
     "Id": "4369",
-    "LiabilityTypeId": "Short Term Loans",
+    "LiabilityType": "Short Term Loans",
     "Description": "AmEx",
     "MaturityDate": "2019-04-04T00:00:00Z",
     "AccountNumber": "456123",
     "Owners": ["4611686018429193739"],
-    "Amounts": [{
-      "Liability": 5000.0,
-      "LiabilityDate": "2018-11-01T00:00:00Z"
-    }]
+    "LatestAmount": {
+      "Value": 5000.0,
+      "ValueDate": "2018-11-01T00:00:00Z"
+    }
   }],
   "InvestmentAccounts": [{
     "Id": "88778102",
-    "ProductTypeId": "Investment",
+    "ProductType": "Investment",
     "Name": "Seven 7s",
     "AccountNumber": "7777777",
     "IssueDate": "1994-04-24T00:00:00Z",
     "MaturityDate": "2020-05-10T00:00:00Z",
-    "AccountTaxTypeId": "Qualified - 401(k)",
+    "AccountTaxType": "Qualified - 401(k)",
     "IsManagedMoney": true,
     "Owners": ["4611686018429193739"],
     "Premiums": [],
-    "Values": [{
+    "LatestValue": {
       "Value": 800000.0,
       "ValueDate": "2018-11-08T00:00:00Z"
-    }],
+    },
     "Investments": [{
       "Modal": 15000.0,
       "Annualized": 15000.0,
@@ -153,8 +156,8 @@
       "AmountToDate": 15000.0
     }],
     "Withdrawals": [{
-      "AccountWithdrawalTypeId": "Annuitization",
-      "AccountWithdrawalModeTypeId": "Single",
+      "AccountWithdrawalType": "Annuitization",
+      "AccountWithdrawalModeType": "Single",
       "WithdrawalAmount": 4500000.0,
       "WithdrawalDate": "2018-12-03T00:00:00Z",
       "StartDate": "2020-05-24T00:00:00Z",
@@ -166,12 +169,12 @@
     "SpiaValues": []
   }, {
     "Id": "88778160",
-    "ProductTypeId": "Variable Annuity",
+    "ProductType": "Variable Annuity",
     "Name": "Four 4s",
     "AccountNumber": "4444",
     "IssueDate": "2000-05-05T00:00:00Z",
     "MaturityDate": "2019-04-17T00:00:00Z",
-    "AccountTaxTypeId": "Qualified",
+    "AccountTaxType": "Qualified",
     "IsManagedMoney": false,
     "Owners": ["4611686018429193739"],
     "Premiums": [{
@@ -181,14 +184,14 @@
       "EndDate": "2019-02-28T00:00:00Z",
       "PremiumsToDate": 128000.0
     }],
-    "Values": [{
+    "LatestValue": {
       "Value": 750000.0,
       "ValueDate": "2018-12-13T00:00:00Z"
-    }],
+    },
     "Investments": [],
     "Withdrawals": [{
-      "AccountWithdrawalTypeId": "Income Rider",
-      "AccountWithdrawalModeTypeId": "Monthly",
+      "AccountWithdrawalType": "Income Rider",
+      "AccountWithdrawalModeType": "Monthly",
       "WithdrawalAmount": 50000.0,
       "WithdrawalDate": "2019-01-10T00:00:00Z",
       "StartDate": "2019-01-15T00:00:00Z",
@@ -206,18 +209,18 @@
     "SpiaValues": [{
       "Amount": 50000.0,
       "ValueDate": "2018-10-16T00:00:00Z",
-      "SpiaTermTypeId": "Monthly",
+      "SpiaTermType": "Monthly",
       "AnnualAmount": 600000.0,
       "TermYears": 0
     }]
   }, {
     "Id": "88778161",
-    "ProductTypeId": "Variable Life",
+    "ProductType": "Variable Life",
     "Name": "Three 5s",
     "AccountNumber": "555",
     "IssueDate": null,
     "MaturityDate": null,
-    "AccountTaxTypeId": "null",
+    "AccountTaxType": "null",
     "IsManagedMoney": false,
     "Owners": ["4611686018429193739"],
     "Premiums": [{
@@ -227,14 +230,14 @@
       "EndDate": "2021-01-03T00:00:00Z",
       "PremiumsToDate": 80000.0
     }],
-    "Values": [{
+    "LatestValue": {
       "Value": 500000.0,
       "ValueDate": "2018-12-18T00:00:00Z"
-    }],
+    },
     "Investments": [],
     "Withdrawals": [{
-      "AccountWithdrawalTypeId": "RMD",
-      "AccountWithdrawalModeTypeId": "Monthly",
+      "AccountWithdrawalType": "RMD",
+      "AccountWithdrawalModeType": "Monthly",
       "WithdrawalAmount": 50000.0,
       "WithdrawalDate": "2018-12-03T00:00:00Z",
       "StartDate": "2019-01-03T00:00:00Z",
@@ -251,12 +254,12 @@
   }],
   "InsuranceAccounts": [{
     "Id": "88833631",
-    "ProductTypeId": "Fixed Annuity",
+    "ProductType": "Fixed Annuity",
     "Name": "Eight 8s",
     "PolicyNumber": "88888888",
     "IssueDate": "1999-02-25T00:00:00Z",
     "MaturityDate": "2020-02-20T00:00:00Z",
-    "AccountTaxTypeId": 17,
+    "AccountTaxType": "Qualified",
     "Owners": ["4611686018429193739"],
     "Premiums": [{
       "Modal": 10000.0,
@@ -265,17 +268,17 @@
       "EndDate": "2019-03-07T00:00:00Z",
       "PremiumsToDate": 20000.0
     }],
-    "Values": [{
+    "LatestValue": {
       "Value": 10000.0,
       "ValueDate": "2018-11-01T00:00:00Z"
-    }],
+    },
     "AccountVendorProducts": [{
       "VendorName": "AIG Annuity",
       "ProductName": "Constellation"
     }],
     "Withdrawals": [{
-      "AccountWithdrawalTypeId": "Annuitization",
-      "AccountWithdrawalModeTypeId": "Semi-Annual",
+      "AccountWithdrawalType": "Annuitization",
+      "AccountWithdrawalModeType": "Semi-Annual",
       "WithdrawalAmount": 50000.0,
       "WithdrawalDate": "2025-11-19T00:00:00Z",
       "StartDate": "2025-12-12T00:00:00Z",
@@ -293,18 +296,18 @@
     "SpiaValues": [{
       "Amount": 50000.0,
       "ValueDate": "2010-11-08T00:00:00Z",
-      "SpiaTermTypeId": "Quarterly",
+      "SpiaTermType": "Quarterly",
       "AnnualAmount": 200000.0,
       "TermYears": 0
     }]
   }, {
     "Id": "88833712",
-    "ProductTypeId": "Fixed Life",
+    "ProductType": "Fixed Life",
     "Name": "Five 9s",
     "PolicyNumber": "99999",
     "IssueDate": "2010-05-05T00:00:00Z",
     "MaturityDate": "2020-04-16T00:00:00Z",
-    "AccountTaxTypeId": 5,
+    "AccountTaxType": "Non Qualified",
     "Owners": ["4611686018429193739"],
     "Premiums": [{
       "Modal": 15000.0,
@@ -313,17 +316,17 @@
       "EndDate": "2021-01-03T00:00:00Z",
       "PremiumsToDate": 15000.0
     }],
-    "Values": [{
+    "LatestValue": {
       "Value": 250000.0,
       "ValueDate": "2018-03-09T00:00:00Z"
-    }],
+    },
     "AccountVendorProducts": [{
       "VendorName": "Test Vendor",
       "ProductName": "Second Life"
     }],
     "Withdrawals": [{
-      "AccountWithdrawalTypeId": "Income Rider",
-      "AccountWithdrawalModeTypeId": "Quarterly",
+      "AccountWithdrawalType": "Income Rider",
+      "AccountWithdrawalModeType": "Quarterly",
       "WithdrawalAmount": 50000.0,
       "WithdrawalDate": "2018-12-30T00:00:00Z",
       "StartDate": "2017-12-12T00:00:00Z",
