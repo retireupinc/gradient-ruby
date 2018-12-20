@@ -30,7 +30,7 @@ module GradientRuby
       end
 
       def upload
-        response = @agent.post "documents", {body: json_params}
+        response = @agent.post("documents", {body: json_params}) || {}
 
         self.class.new response, self
       end
