@@ -1,7 +1,8 @@
 module GradientRuby
   module Models
     class Expense < Base
-      attribute :expense_type_id, String
+      attribute :id, String
+      attribute :expense_type, String
       attribute :description, String
       attribute :monthly_expense, Float
       attribute :owners, Set[String]

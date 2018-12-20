@@ -1,6 +1,7 @@
 module GradientRuby
   module Models
     class Income < Base
+      attribute :id, String
       attribute :income_type, String
       attribute :description, String
       attribute :start_age, Integer

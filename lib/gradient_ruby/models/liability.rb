@@ -1,7 +1,8 @@
 module GradientRuby
   module Models
     class Liability < Base
-      attribute :liability_type_id, String
+      attribute :id, String
+      attribute :liability_type, String
       attribute :description, String
       attribute :maturity_date, DateTime
       attribute :account_number, String

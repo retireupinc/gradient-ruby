@@ -14,7 +14,7 @@ module GradientRuby
       attribute :drivers_license_expiration_date, DateTime
       attribute :is_citizen, Boolean
       attribute :marital_status, String
-      attribute :phone_number, String
+      attribute :phone_numbers, Set[Phone]
       attribute :physical_address, Address
     end
   end

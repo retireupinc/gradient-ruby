@@ -1,0 +1,341 @@
+{
+  "Client": {
+    "Id": "4611686018429193739",
+    "FirstName": "John",
+    "MiddleName": "Athon",
+    "LastName": "Doe",
+    "DateOfBirth": "1950-01-01T00:00:00Z",
+    "DriversLicenseNumber": "M1234567890",
+    "DriversLicenseState": "Kansas",
+    "DriversLicenseExpirationDate": "2019-05-05T00:00:00Z",
+    "IsCitizen": true,
+    "MaritalStatus": "Married",
+    "PhysicalAddress": {
+      "Street": "1234 House Street",
+      "Street2": "",
+      "City": "City",
+      "StateOrProvince": "Kansas",
+      "ZipCode": 97315
+    },
+    "PhoneNumber": "6514888888",
+    "Gender": "Male",
+    "Suffix": "III",
+    "Prefix": "Dr."
+  },
+  "ClientSpouse": {
+    "Id": "4611686018429193741",
+    "FirstName": "Jane",
+    "MiddleName": "Janice",
+    "LastName": "Doe",
+    "DateOfBirth": "1960-08-08T00:00:00Z",
+    "DriversLicenseNumber": "m0987654321",
+    "DriversLicenseState": "Louisiana",
+    "DriversLicenseExpirationDate": "2019-03-08T00:00:00Z",
+    "IsCitizen": true,
+    "MaritalStatus": "Married",
+    "PhysicalAddress": null,
+    "PhoneNumber": "",
+    "Gender": "Female",
+    "Suffix": "Jr.",
+    "Prefix": "Mrs."
+  },
+  "ChildCount": 2,
+  "Children": [{
+    "FirstName": "Jack",
+    "LastName": "Doe",
+    "MiddleName": "James",
+    "Age": 6
+  }, {
+    "FirstName": "Jesse",
+    "LastName": "Doe",
+    "MiddleName": "Jenny",
+    "Age": 16
+  }],
+  "Incomes": [{
+    "Id": "16084",
+    "IncomeType": "Salary",
+    "Description": "Working Job",
+    "StartAge": 68,
+    "EndAge": 68,
+    "MonthlyIncome": 7083.33,
+    "AnnualGrowthPercentage": 2.0,
+    "BeneficiaryPercentage": 0.0,
+    "Owners": ["4611686018429193739"]
+  }, {
+    "Id": "16086",
+    "IncomeType": "Social Security",
+    "Description": "Own Benefits",
+    "StartAge": 70,
+    "EndAge": 83,
+    "MonthlyIncome": 10883.4638,
+    "AnnualGrowthPercentage": 1.52,
+    "BeneficiaryPercentage": 0.0,
+    "Owners": ["4611686018429193739"]
+  }],
+  "Assets": [{
+    "Id": "16060",
+    "AssetType": "Property",
+    "Description": "House",
+    "AccountNumber": "55555",
+    "Owners": ["4611686018429193739"],
+    "AssetValueModels": [{
+      "ValueDate": "2018-11-01T00:00:00Z",
+      "Value": 520000.0
+    }]
+  }, {
+    "Id": "16061",
+    "AssetType": "Saving",
+    "Description": "Savings",
+    "AccountNumber": "333",
+    "Owners": ["4611686018429193739"],
+    "AssetValueModels": [{
+      "ValueDate": "2018-10-19T00:00:00Z",
+      "Value": 25000.0
+    }]
+  }],
+  "Expenses": [{
+    "Id": "15895",
+    "ExpenseTypeId": "Rent/Mortgage",
+    "Description": "Rent/Mortgage",
+    "MonthlyExpense": 2500.0,
+    "Owners": ["4611686018429193739"]
+  }, {
+    "Id": "15896",
+    "ExpenseTypeId": "Car Loan Payment 1",
+    "Description": "Car Loan Payment 1",
+    "MonthlyExpense": 500.0,
+    "Owners": ["4611686018429193739"]
+  }, {
+    "Id": "15897",
+    "ExpenseTypeId": "Electric",
+    "Description": "Electric",
+    "MonthlyExpense": 75.0,
+    "Owners": ["4611686018429193739"]
+  }, {
+    "Id": "15898",
+    "ExpenseTypeId": "Pet Needs",
+    "Description": "Pet Needs",
+    "MonthlyExpense": 100.0,
+    "Owners": ["4611686018429193739"]
+  }],
+  "Liabilities": [{
+    "Id": "4369",
+    "LiabilityTypeId": "Short Term Loans",
+    "Description": "AmEx",
+    "MaturityDate": "2019-04-04T00:00:00Z",
+    "AccountNumber": "456123",
+    "Owners": ["4611686018429193739"],
+    "Amounts": [{
+      "Liability": 5000.0,
+      "LiabilityDate": "2018-11-01T00:00:00Z"
+    }]
+  }],
+  "InvestmentAccounts": [{
+    "Id": "88778102",
+    "ProductTypeId": "Investment",
+    "Name": "Seven 7s",
+    "AccountNumber": "7777777",
+    "IssueDate": "1994-04-24T00:00:00Z",
+    "MaturityDate": "2020-05-10T00:00:00Z",
+    "AccountTaxTypeId": "Qualified - 401(k)",
+    "IsManagedMoney": true,
+    "Owners": ["4611686018429193739"],
+    "Premiums": [],
+    "Values": [{
+      "Value": 800000.0,
+      "ValueDate": "2018-11-08T00:00:00Z"
+    }],
+    "Investments": [{
+      "Modal": 15000.0,
+      "Annualized": 15000.0,
+      "StartDate": "2018-12-14T00:00:00Z",
+      "EndDate": "2019-06-04T00:00:00Z",
+      "AmountToDate": 15000.0
+    }],
+    "Withdrawals": [{
+      "AccountWithdrawalTypeId": "Annuitization",
+      "AccountWithdrawalModeTypeId": "Single",
+      "WithdrawalAmount": 4500000.0,
+      "WithdrawalDate": "2018-12-03T00:00:00Z",
+      "StartDate": "2020-05-24T00:00:00Z",
+      "EndDate": "2020-06-26T00:00:00Z",
+      "WithdrawalsToDate": 4500000.0
+    }],
+    "AnnuityValues": [],
+    "LifeKeyValue": null,
+    "SpiaValues": []
+  }, {
+    "Id": "88778160",
+    "ProductTypeId": "Variable Annuity",
+    "Name": "Four 4s",
+    "AccountNumber": "4444",
+    "IssueDate": "2000-05-05T00:00:00Z",
+    "MaturityDate": "2019-04-17T00:00:00Z",
+    "AccountTaxTypeId": "Qualified",
+    "IsManagedMoney": false,
+    "Owners": ["4611686018429193739"],
+    "Premiums": [{
+      "Modal": 4000.0,
+      "Annualized": 16000.0,
+      "StartDate": "2011-01-03T00:00:00Z",
+      "EndDate": "2019-02-28T00:00:00Z",
+      "PremiumsToDate": 128000.0
+    }],
+    "Values": [{
+      "Value": 750000.0,
+      "ValueDate": "2018-12-13T00:00:00Z"
+    }],
+    "Investments": [],
+    "Withdrawals": [{
+      "AccountWithdrawalTypeId": "Income Rider",
+      "AccountWithdrawalModeTypeId": "Monthly",
+      "WithdrawalAmount": 50000.0,
+      "WithdrawalDate": "2019-01-10T00:00:00Z",
+      "StartDate": "2019-01-15T00:00:00Z",
+      "EndDate": "2020-06-24T00:00:00Z",
+      "WithdrawalsToDate": 0.0
+    }],
+    "AnnuityValues": [{
+      "AnnuityDate": "2019-04-05T00:00:00Z",
+      "Surrender": 25000.0,
+      "AvailabilityFreeWithdrawal": 100000.0,
+      "IncomeRider": 65000.0,
+      "DeathBenefitRider": 10000.0
+    }],
+    "LifeKeyValue": null,
+    "SpiaValues": [{
+      "Amount": 50000.0,
+      "ValueDate": "2018-10-16T00:00:00Z",
+      "SpiaTermTypeId": "Monthly",
+      "AnnualAmount": 600000.0,
+      "TermYears": 0
+    }]
+  }, {
+    "Id": "88778161",
+    "ProductTypeId": "Variable Life",
+    "Name": "Three 5s",
+    "AccountNumber": "555",
+    "IssueDate": null,
+    "MaturityDate": null,
+    "AccountTaxTypeId": "null",
+    "IsManagedMoney": false,
+    "Owners": ["4611686018429193739"],
+    "Premiums": [{
+      "Modal": 80000.0,
+      "Annualized": 160000.0,
+      "StartDate": "2018-11-01T00:00:00Z",
+      "EndDate": "2021-01-03T00:00:00Z",
+      "PremiumsToDate": 80000.0
+    }],
+    "Values": [{
+      "Value": 500000.0,
+      "ValueDate": "2018-12-18T00:00:00Z"
+    }],
+    "Investments": [],
+    "Withdrawals": [{
+      "AccountWithdrawalTypeId": "RMD",
+      "AccountWithdrawalModeTypeId": "Monthly",
+      "WithdrawalAmount": 50000.0,
+      "WithdrawalDate": "2018-12-03T00:00:00Z",
+      "StartDate": "2019-01-03T00:00:00Z",
+      "EndDate": "2020-09-15T00:00:00Z",
+      "WithdrawalsToDate": 0.0
+    }],
+    "AnnuityValues": [],
+    "LifeKeyValue": {
+      "BasicFaceAmount": 50000.0,
+      "LoanAmount": 100000.0,
+      "CashSurrenderValue": 25000.0
+    },
+    "SpiaValues": []
+  }],
+  "InsuranceAccounts": [{
+    "Id": "88833631",
+    "ProductTypeId": "Fixed Annuity",
+    "Name": "Eight 8s",
+    "PolicyNumber": "88888888",
+    "IssueDate": "1999-02-25T00:00:00Z",
+    "MaturityDate": "2020-02-20T00:00:00Z",
+    "AccountTaxTypeId": 17,
+    "Owners": ["4611686018429193739"],
+    "Premiums": [{
+      "Modal": 10000.0,
+      "Annualized": 120000.0,
+      "StartDate": "2018-11-01T00:00:00Z",
+      "EndDate": "2019-03-07T00:00:00Z",
+      "PremiumsToDate": 20000.0
+    }],
+    "Values": [{
+      "Value": 10000.0,
+      "ValueDate": "2018-11-01T00:00:00Z"
+    }],
+    "AccountVendorProducts": [{
+      "VendorName": "AIG Annuity",
+      "ProductName": "Constellation"
+    }],
+    "Withdrawals": [{
+      "AccountWithdrawalTypeId": "Annuitization",
+      "AccountWithdrawalModeTypeId": "Semi-Annual",
+      "WithdrawalAmount": 50000.0,
+      "WithdrawalDate": "2025-11-19T00:00:00Z",
+      "StartDate": "2025-12-12T00:00:00Z",
+      "EndDate": "2027-06-04T00:00:00Z",
+      "WithdrawalsToDate": 0.0
+    }],
+    "AnnuityValues": [{
+      "AnnuityDate": "2018-12-12T00:00:00Z",
+      "Surrender": 5000.0,
+      "AvailabilityFreeWithdrawal": 4000.0,
+      "IncomeRider": 3000.0,
+      "DeathBenefitRider": 2000.0
+    }],
+    "LifeKeyValue": null,
+    "SpiaValues": [{
+      "Amount": 50000.0,
+      "ValueDate": "2010-11-08T00:00:00Z",
+      "SpiaTermTypeId": "Quarterly",
+      "AnnualAmount": 200000.0,
+      "TermYears": 0
+    }]
+  }, {
+    "Id": "88833712",
+    "ProductTypeId": "Fixed Life",
+    "Name": "Five 9s",
+    "PolicyNumber": "99999",
+    "IssueDate": "2010-05-05T00:00:00Z",
+    "MaturityDate": "2020-04-16T00:00:00Z",
+    "AccountTaxTypeId": 5,
+    "Owners": ["4611686018429193739"],
+    "Premiums": [{
+      "Modal": 15000.0,
+      "Annualized": 30000.0,
+      "StartDate": "2018-11-01T00:00:00Z",
+      "EndDate": "2021-01-03T00:00:00Z",
+      "PremiumsToDate": 15000.0
+    }],
+    "Values": [{
+      "Value": 250000.0,
+      "ValueDate": "2018-03-09T00:00:00Z"
+    }],
+    "AccountVendorProducts": [{
+      "VendorName": "Test Vendor",
+      "ProductName": "Second Life"
+    }],
+    "Withdrawals": [{
+      "AccountWithdrawalTypeId": "Income Rider",
+      "AccountWithdrawalModeTypeId": "Quarterly",
+      "WithdrawalAmount": 50000.0,
+      "WithdrawalDate": "2018-12-30T00:00:00Z",
+      "StartDate": "2017-12-12T00:00:00Z",
+      "EndDate": "2019-06-04T00:00:00Z",
+      "WithdrawalsToDate": 250000.0
+    }],
+    "AnnuityValues": [],
+    "LifeKeyValue": {
+      "BasicFaceAmount": 65000.0,
+      "LoanAmount": 80000.0,
+      "CashSurrenderValue": 35000.0
+    },
+    "SpiaValues": []
+  }]
+}

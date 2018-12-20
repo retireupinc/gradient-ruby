@@ -1,13 +1,14 @@
 module GradientRuby
   module Models
     class Account < Base
-      attribute :product_type_id, String
+      attribute :id, String
+      attribute :product_type, String
       attribute :name, String
       attribute :account_number, String
       attribute :policy_number, String
       attribute :issue_date, DateTime
       attribute :maturity_date, DateTime
-      attribute :account_tax_type_id, String
+      attribute :account_tax_type, String
       attribute :is_managed_money, Boolean
       attribute :account_vendor_products, Set[Product]
       attribute :owners, Set[String]
