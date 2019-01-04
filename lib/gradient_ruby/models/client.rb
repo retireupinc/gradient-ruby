@@ -16,7 +16,7 @@ module GradientRuby
       attribute :marital_status, String
       attribute :phone_number, Phone
       attribute :physical_address, Address
-      attribute :LifeExpectancy, Float
+      attribute :life_expectancy, Float
     end
   end
 end
