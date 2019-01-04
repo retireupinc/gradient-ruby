@@ -23,7 +23,8 @@
     },
     "Gender": "Male",
     "Suffix": "III",
-    "Prefix": "Dr."
+    "Prefix": "Dr.",
+    "LifeExpectancy": 83.75
   },
   "ClientSpouse": {
     "Id": "4611686018429193741",
@@ -40,7 +41,8 @@
     "PhoneNumber": null,
     "Gender": "Female",
     "Suffix": "Jr.",
-    "Prefix": "Mrs."
+    "Prefix": "Mrs.",
+    "LifeExpectancy": 84.04
   },
   "ChildCount": 2,
   "Children": [{
@@ -164,9 +166,9 @@
       "EndDate": "2020-06-26T00:00:00Z",
       "WithdrawalsToDate": 4500000.0
     }],
-    "AnnuityValues": [],
+    "AnnuityValues": null,
     "LifeKeyValue": null,
-    "SpiaValues": []
+    "SpiaValues": null
   }, {
     "Id": "88778160",
     "ProductType": "Variable Annuity",
@@ -182,7 +184,7 @@
       "Annualized": 16000.0,
       "StartDate": "2011-01-03T00:00:00Z",
       "EndDate": "2019-02-28T00:00:00Z",
-      "PremiumsToDate": 128000.0
+      "PremiumsToDate": 132000.0
     }],
     "LatestValue": {
       "Value": 750000.0,
@@ -198,21 +200,21 @@
       "EndDate": "2020-06-24T00:00:00Z",
       "WithdrawalsToDate": 0.0
     }],
-    "AnnuityValues": [{
+    "AnnuityValues": {
       "AnnuityDate": "2019-04-05T00:00:00Z",
       "Surrender": 25000.0,
       "AvailabilityFreeWithdrawal": 100000.0,
       "IncomeRider": 65000.0,
       "DeathBenefitRider": 10000.0
-    }],
+    },
     "LifeKeyValue": null,
-    "SpiaValues": [{
+    "SpiaValues": {
       "Amount": 50000.0,
       "ValueDate": "2018-10-16T00:00:00Z",
       "SpiaTermType": "Monthly",
       "AnnualAmount": 600000.0,
       "TermYears": 0
-    }]
+    }
   }, {
     "Id": "88778161",
     "ProductType": "Variable Life",
@@ -242,15 +244,15 @@
       "WithdrawalDate": "2018-12-03T00:00:00Z",
       "StartDate": "2019-01-03T00:00:00Z",
       "EndDate": "2020-09-15T00:00:00Z",
-      "WithdrawalsToDate": 0.0
+      "WithdrawalsToDate": 50000.0
     }],
-    "AnnuityValues": [],
+    "AnnuityValues": null,
     "LifeKeyValue": {
       "BasicFaceAmount": 50000.0,
       "LoanAmount": 100000.0,
       "CashSurrenderValue": 25000.0
     },
-    "SpiaValues": []
+    "SpiaValues": null
   }],
   "InsuranceAccounts": [{
     "Id": "88833631",
@@ -266,7 +268,7 @@
       "Annualized": 120000.0,
       "StartDate": "2018-11-01T00:00:00Z",
       "EndDate": "2019-03-07T00:00:00Z",
-      "PremiumsToDate": 20000.0
+      "PremiumsToDate": 30000.0
     }],
     "LatestValue": {
       "Value": 10000.0,
@@ -285,21 +287,21 @@
       "EndDate": "2027-06-04T00:00:00Z",
       "WithdrawalsToDate": 0.0
     }],
-    "AnnuityValues": [{
+    "AnnuityValues": {
       "AnnuityDate": "2018-12-12T00:00:00Z",
       "Surrender": 5000.0,
       "AvailabilityFreeWithdrawal": 4000.0,
       "IncomeRider": 3000.0,
       "DeathBenefitRider": 2000.0
-    }],
+    },
     "LifeKeyValue": null,
-    "SpiaValues": [{
+    "SpiaValues": {
       "Amount": 50000.0,
       "ValueDate": "2010-11-08T00:00:00Z",
       "SpiaTermType": "Quarterly",
       "AnnualAmount": 200000.0,
       "TermYears": 0
-    }]
+    }
   }, {
     "Id": "88833712",
     "ProductType": "Fixed Life",
@@ -333,12 +335,12 @@
       "EndDate": "2019-06-04T00:00:00Z",
       "WithdrawalsToDate": 250000.0
     }],
-    "AnnuityValues": [],
+    "AnnuityValues": null,
     "LifeKeyValue": {
       "BasicFaceAmount": 65000.0,
       "LoanAmount": 80000.0,
       "CashSurrenderValue": 35000.0
     },
-    "SpiaValues": []
+    "SpiaValues": null
   }]
 }

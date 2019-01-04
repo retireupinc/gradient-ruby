@@ -16,8 +16,8 @@ module GradientRuby
       attribute :premiums, Set[Contribution]
       attribute :investments, Set[Contribution]
       attribute :withdrawals, Set[Withdrawal]
-      attribute :annuity_values, Set[Annuity]
-      attribute :spia_values, Set[Spia]
+      attribute :annuity_values, Annuity
+      attribute :spia_values, Spia
     end
   end
 end
