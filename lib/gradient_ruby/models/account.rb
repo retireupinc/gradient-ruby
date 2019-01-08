@@ -18,6 +18,7 @@ module GradientRuby
       attribute :withdrawals, Set[Withdrawal]
       attribute :annuity_values, Annuity
       attribute :spia_values, Spia
+      attribute :holdings, Set[Holding]
     end
   end
 end

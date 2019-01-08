@@ -168,7 +168,8 @@
     }],
     "AnnuityValues": null,
     "LifeKeyValue": null,
-    "SpiaValues": null
+    "SpiaValues": null,
+    "Holdings": []
   }, {
     "Id": "88778160",
     "ProductType": "Variable Annuity",
@@ -214,7 +215,8 @@
       "SpiaTermType": "Monthly",
       "AnnualAmount": 600000.0,
       "TermYears": 0
-    }
+    },
+    "Holdings": []
   }, {
     "Id": "88778161",
     "ProductType": "Variable Life",
@@ -252,7 +254,29 @@
       "LoanAmount": 100000.0,
       "CashSurrenderValue": 25000.0
     },
-    "SpiaValues": null
+    "SpiaValues": null,
+    "Holdings": []
+  }, {
+    "Id": "88778180",
+    "ProductType": "Investment",
+    "Name": "Sticker Tock",
+    "AccountNumber": "5125125",
+    "IssueDate": null,
+    "MaturityDate": null,
+    "AccountTaxType": "null",
+    "IsManagedMoney": false,
+    "Owners": ["4611686018429193739"],
+    "Premiums": [],
+    "LatestValue": null,
+    "Investments": [],
+    "Withdrawals": [],
+    "AnnuityValues": null,
+    "LifeKeyValue": null,
+    "SpiaValues": null,
+    "Holdings": [{
+      "Ticker": "ZURVY",
+      "MarketValue": 500.0
+    }]
   }],
   "InsuranceAccounts": [{
     "Id": "88833631",
