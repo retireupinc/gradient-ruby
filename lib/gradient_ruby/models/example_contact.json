@@ -144,6 +144,7 @@
     "MaturityDate": "2020-05-10T00:00:00Z",
     "AccountTaxType": "Qualified - 401(k)",
     "IsManagedMoney": true,
+    "ProductSubType": "Other",
     "Owners": ["4611686018429193739"],
     "Premiums": [],
     "LatestValue": {
@@ -179,6 +180,7 @@
     "MaturityDate": "2019-04-17T00:00:00Z",
     "AccountTaxType": "Qualified",
     "IsManagedMoney": false,
+    "ProductSubType": null,
     "Owners": ["4611686018429193739"],
     "Premiums": [{
       "Modal": 4000.0,
@@ -226,6 +228,7 @@
     "MaturityDate": null,
     "AccountTaxType": "null",
     "IsManagedMoney": false,
+    "ProductSubType": null,
     "Owners": ["4611686018429193739"],
     "Premiums": [{
       "Modal": 80000.0,
@@ -265,6 +268,7 @@
     "MaturityDate": null,
     "AccountTaxType": "null",
     "IsManagedMoney": false,
+    "ProductSubType": "Stock",
     "Owners": ["4611686018429193739"],
     "Premiums": [],
     "LatestValue": null,
@@ -286,6 +290,7 @@
     "IssueDate": "1999-02-25T00:00:00Z",
     "MaturityDate": "2020-02-20T00:00:00Z",
     "AccountTaxType": "Qualified",
+    "ProductSubType": "Fixed Indexed Annuity",
     "Owners": ["4611686018429193739"],
     "Premiums": [{
       "Modal": 10000.0,
@@ -334,6 +339,7 @@
     "IssueDate": "2010-05-05T00:00:00Z",
     "MaturityDate": "2020-04-16T00:00:00Z",
     "AccountTaxType": "Non Qualified",
+    "ProductSubType": "Indexed Universal Life",
     "Owners": ["4611686018429193739"],
     "Premiums": [{
       "Modal": 15000.0,

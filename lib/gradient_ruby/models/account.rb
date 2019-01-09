@@ -9,6 +9,7 @@ module GradientRuby
       attribute :issue_date, DateTime
       attribute :maturity_date, DateTime
       attribute :account_tax_type, String
+      attribute :product_sub_type, String
       attribute :is_managed_money, Boolean
       attribute :account_vendor_products, Set[Product]
       attribute :owners, Set[String]
