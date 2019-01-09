@@ -57,7 +57,11 @@ module GradientRuby
         end
       end
 
-      response.parsed_response
+      if response.parsed_response.blank? || response.parsed_response == 0
+          {}
+      else
+          response.parsed_response
+      end
     end
 
   end
