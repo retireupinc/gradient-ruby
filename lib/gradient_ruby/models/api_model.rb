@@ -20,7 +20,7 @@ module GradientRuby
         self.class.json_attrs.inject({}) do |hash, key|
           val = transform_val(self.send(key))
 
-          next if val.nil?
+          next hash if val.nil?
 
           hash[transform_key(key)] = val
 
