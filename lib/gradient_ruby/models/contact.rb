@@ -22,10 +22,10 @@ module GradientRuby
       def save
         if @id
           response = @agent.put "clients/#{@id}", {body: json_params}
-          json_params
+          response = json_params
         else
           response = @agent.post "clients", {body: json_params}
-          json_params.deep_merge({
+          response = json_params.deep_merge({
             'client' => {
               'id' => response
             }
