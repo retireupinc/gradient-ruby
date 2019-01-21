@@ -24,9 +24,10 @@ module GradientRuby
           response = @agent.put "clients/#{@id}", {body: json_params}
           json_params
         else
-          response = json_params.deep_merge({
+          response = @agent.post "clients", {body: json_params}
+          json_params.deep_merge({
             'client' => {
-              'id' => @agent.post "clients", {body: json_params}
+              'id' => response
             }
           })
         end
