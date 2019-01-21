@@ -58,9 +58,9 @@ module GradientRuby
       end
 
       if response.parsed_response.blank? || response.parsed_response == 0
-          {}
+        nil
       else
-          response.parsed_response
+        response.parsed_response
       end
     end
 
