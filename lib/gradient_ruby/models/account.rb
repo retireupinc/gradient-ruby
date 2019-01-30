@@ -20,6 +20,7 @@ module GradientRuby
       attribute :annuity_values, Annuity
       attribute :spia_values, Spia
       attribute :holdings, Set[Holding]
+      attribute :life_key_value, Lkv
     end
   end
 end
